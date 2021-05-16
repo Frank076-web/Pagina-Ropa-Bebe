@@ -1,4 +1,4 @@
-const imagenesZapatillitas = [
+const $imagenesProductos = [
   {
     img: "../Imagenes/Imagenes-de-conjuntos/zapatillitas-no-caminantes/zapatillitas1.webp",
     productosDescripcion: "Color: Rosa Bebe",
@@ -33,9 +33,9 @@ const imagenesZapatillitas = [
 const $header = document.getElementById("header");
 const $main = document.createElement("main");
 $main.classList.add("contenedor", "productosgrid");
-const $fragmentZapatillitas = document.createDocumentFragment();
+const $fragmentProductos = document.createDocumentFragment();
 
-imagenesZapatillitas.forEach((el) => {
+$imagenesProductos.forEach((el) => {
   const $productoZapatillitas = document.createElement("div");
 
   const $parrafo = document.createElement("p");
@@ -59,8 +59,8 @@ imagenesZapatillitas.forEach((el) => {
   $productoZapatillitas.appendChild($cajaImagen);
   $productoZapatillitas.appendChild($precio);
 
-  $fragmentZapatillitas.appendChild($productoZapatillitas);
+  $fragmentProductos.appendChild($productoZapatillitas);
 });
 
-$main.appendChild($fragmentZapatillitas);
+$main.appendChild($fragmentProductos);
 $header.insertAdjacentElement("afterend", $main);
