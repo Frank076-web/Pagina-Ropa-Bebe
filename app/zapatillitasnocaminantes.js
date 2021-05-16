@@ -82,6 +82,6 @@ $imagenesProductos.forEach((el) => {
   // Inserto cada producto en el fragmento
   $fragmentProductos.appendChild($productoZapatillitas);
 });
-// inserto en HTML
+// inserto en HTML despues del header
 $main.appendChild($fragmentProductos);
 $header.insertAdjacentElement("afterend", $main);
