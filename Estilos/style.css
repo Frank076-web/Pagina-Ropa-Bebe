@@ -1,125 +1,153 @@
-:root{
-    --primario: #C6C1C6;
-    --primarioOscuro: #AAAAAA ;
+:root {
+  --primario: #c6c1c6;
+  --primarioOscuro: #aaaaaa;
 
-    --fuentePrincipal: 'Antonio', sans-serif;
+  --fuentePrincipal: "Antonio", sans-serif;
 }
 *,
 *::after,
 *::before {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 html {
-box-sizing: border-box;
-font-size: 62.5%;
-padding: 0;
-margin: 0;
-font-size: 1rem;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
 }
-.contenedor{
-max-width: 120rem;
-width: 90%;
-margin: 0 auto;
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
 }
-img{
-max-width: 100%;
+img {
+  max-width: 100%;
 }
-body{
-    background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(134,134,134,1) 50%, rgba(255,255,255,1) 100%); 
-    
+body {
+  background: rgb(48, 48, 48);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 48, 48, 1) 0%,
+    rgba(134, 134, 134, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
-                    /* Fondo */
-.imgfondo{
-    background-image: url(../Imagenes/WhatsApp\ Image\ 2021-04-25\ at\ 15.07.11.webp);
-    min-height: 100%;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    border: .15rem solid#000;
- }
- /* .imgfondo{
+/* Fondo */
+.imgfondo {
+  background-image: url(../Imagenes/WhatsApp\ Image\ 2021-04-25\ at\ 15.07.11.webp);
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  border: 0.15rem solid#000;
+}
+/* .imgfondo{
      background-color: #a4a5a8;
  } */
- 
-                    /* Encabezado */
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--fuentePrincipal);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: #000;
-    font-weight: bold;
+
+/* Encabezado */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
 }
 
-.logo{   
-    max-width: 5rem;
-    margin: 1rem;
-    margin-bottom: -2rem;
-    align-self: flex-start;
+.logo {
+  max-width: 5rem;
+  margin: 1rem;
+  margin-bottom: -2rem;
+  align-self: flex-start;
 }
 @media screen and (min-width: 768px) {
-    .logo{
-        max-width: 10rem;
-        margin-bottom: 2rem;
-        align-self: center;
-    }
+  .logo {
+    max-width: 10rem;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
 }
-                    /* Menu Principal */
-.grid{
+/* Menu Principal */
+.grid {
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
 }
 @media screen and (min-width: 768px) {
-    .grid{
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
 }
 
-.categorias{
-    margin-bottom: 4rem;
+.categorias {
+  margin-bottom: 4rem;
 }
 
-.categorias__imagen-1{background-image: url(../Imagenes/Imagenes-Categorias/ajuar-4piezas.webp);
-    transition: transform .3s;}
-.categorias__imagen-2{background-image: url(/Imagenes/Imagenes-Categorias/ajuar-plush.webp);
-    transition: transform .3s;}
-.categorias__imagen-3{background-image: url(/Imagenes/Imagenes-Categorias/bodys.webp);
-    transition: transform .3s;}
-.categorias__imagen-4{background-image: url(/Imagenes/Imagenes-Categorias/conjunto-4piezas.webp);
-    transition: transform .3s;}
-.categorias__imagen-5{background-image: url(/Imagenes/Imagenes-Categorias/conjuntos-piel-bifaz.webp);
-    transition: transform .3s;}
-.categorias__imagen-6{background-image: url(/Imagenes/Imagenes-Categorias/conjuntos-plush.webp);
-    transition: transform .3s;}
-.categorias__imagen-7{background-image: url(/Imagenes/Imagenes-Categorias/enterito-plush.webp);
-    transition: transform .3s;}
-.categorias__imagen-8{background-image: url(/Imagenes/Imagenes-Categorias/jardineros.webp);
-    transition: transform .3s;}
-.categorias__imagen-9{background-image: url(/Imagenes/Imagenes-Categorias/manta-plush.webp);
-    transition: transform .3s;}
-.categorias__imagen-10{background-image: url(/Imagenes/Imagenes-Categorias/pijama.webp);
-    transition: transform .3s;}
-.categorias__imagen-11{background-image: url(/Imagenes/Imagenes-Categorias/toalloncapucha.webp);
-    transition: transform .3s;}
-.categorias__imagen-12{background-image: url(/Imagenes/Imagenes-Categorias/zapatillas-nocaminantes.webp);
-    transition: transform .3s;}
-    
- .categorias__imagen{
-    min-height: 20rem;
-    max-width: 100%;
-    background-size: cover;
+.categorias__imagen-1 {
+  background-image: url(../Imagenes/Imagenes-Categorias/ajuar-4piezas.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-2 {
+  background-image: url(/Imagenes/Imagenes-Categorias/ajuar-plush.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-3 {
+  background-image: url(/Imagenes/Imagenes-Categorias/bodys.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-4 {
+  background-image: url(/Imagenes/Imagenes-Categorias/conjunto-4piezas.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-5 {
+  background-image: url(/Imagenes/Imagenes-Categorias/conjuntos-piel-bifaz.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-6 {
+  background-image: url(/Imagenes/Imagenes-Categorias/conjuntos-plush.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-7 {
+  background-image: url(/Imagenes/Imagenes-Categorias/enterito-plush.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-8 {
+  background-image: url(/Imagenes/Imagenes-Categorias/jardineros.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-9 {
+  background-image: url(/Imagenes/Imagenes-Categorias/manta-plush.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-10 {
+  background-image: url(/Imagenes/Imagenes-Categorias/pijama.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-11 {
+  background-image: url(/Imagenes/Imagenes-Categorias/toalloncapucha.webp);
+  transition: transform 0.3s;
+}
+.categorias__imagen-12 {
+  background-image: url(/Imagenes/Imagenes-Categorias/zapatillas-nocaminantes.webp);
+  transition: transform 0.3s;
+}
+
+.categorias__imagen {
+  min-height: 20rem;
+  max-width: 100%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
-    .categorias__imagen{
+  .categorias__imagen {
     min-height: 30rem;
     max-width: 100%;
     background-size: cover;
-    }
+  }
 }
 
 .categorias__imagen-1:hover,
@@ -133,84 +161,83 @@ body{
 .categorias__imagen-9:hover,
 .categorias__imagen-10:hover,
 .categorias__imagen-11:hover,
-.categorias__imagen-12:hover{
-    transform: scale(1.1);
+.categorias__imagen-12:hover {
+  transform: scale(1.1);
 }
 
-.categorias__descripcion{
-    font-family: var(--fuentePrincipal);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: #000;
-    font-weight: bold;
+.categorias__descripcion {
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
 }
 
-                    /* Pie de pagina */
+/* Pie de pagina */
 
-.footer{
-    color: #FFF;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
+.footer {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.contacto {
+  font-family: var(--fuentePrincipal);
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
 }
-.footer__flex{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contacto{
-    font-family: var(--fuentePrincipal);
-    text-transform: uppercase;
-    font-size: 4rem;
-    color: #FFF;
-    font-weight: bold;
-}
-.derechos{
-    text-align: center;
-    justify-self: center;
-    align-self: center;
+.derechos {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
 }
 
 /* Seccion productos */
-.productosflex{
-    display: flex;
-    flex-direction: column;
+.productosflex {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1024px) {
-    .productosgrid{
-        display: grid;
-        column-gap: 2rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);        
-    }
+  .productosgrid {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 1600px) {
-    .productosgrid{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);     
-    }
+  .productosgrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
-.descripcion-inicial{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.3rem;
-    color: #000;
-    margin-bottom: 2rem;
-    text-align: center;
+.descripcion-inicial {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.3rem;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.productos__precio{
-    text-align: center;
-    font-size: 1.8rem;
-    margin-top: .5rem;
+.productos__precio {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
 }
-.productos__precio-precio{
-    font-size: 2rem;
+.productos__precio-precio {
+  font-size: 2rem;
 }
-.productos__descripcion{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.3rem;
+.productos__descripcion {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.3rem;
 }
